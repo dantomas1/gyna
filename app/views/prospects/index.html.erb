@@ -1,0 +1,16 @@
+<% @prospects.each do |prospect| %>
+<div class="row">
+ <div class = "col-md-4 col-md-offset-4 center">
+  <h5><%= prospect.company %></h5>
+  <h5>Contact: <%= prospect.contact %></h5>
+  <h5><%= prospect.address %></h5>
+  <h5><%= prospect.country %></h5>
+  <h5>Phone: <%= prospect.phone %></h5>
+  <h5>Fax: <%= prospect.fax %></h5>
+  <h5>Email: <%= prospect.email %></h5>
+ <hr />
+ <br/> 
+ <br/>
+ </div> 
+</div>
+<% end %>

@@ -1,0 +1,17 @@
+<% @imponeders.each do |imponeder| %>
+<div class="row">
+ <div class = "col-md-4 col-md-offset-4 center">
+  <h5><%= imponeder.company %></h5>
+  <h5>Contact: <%= imponeder.contact %></h5>
+  <h5><%= imponeder.address %></h5>
+  <h5>Netherlands</h5>
+  <h5>Phone: <%= imponeder.phone %></h5>
+  <h5>Fax: <%= imponeder.fax %></h5>
+  <h5>Email: <%= imponeder.email %></h5>
+ <hr />
+ <br/>
+ <br/>
+ </div>
+</div>
+<% end %>
+

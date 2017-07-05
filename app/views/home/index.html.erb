@@ -1,0 +1,63 @@
+<p>Welcome <%= current_user.email %> </p>
+
+<div class="row">
+ <div class="col-md-2">
+   <p>Working for you</p>
+ </div>
+
+   <div class="col-md-3">
+    <p>EUROPE</p>
+    <div class="nav_item">
+     <%=  link_to "Pros Eu", prospects_path, class:"btn btn-lg btn-success" %> 
+      <h5>Some 2k plus EU Postal addresses</h5>
+    </div>   
+    <br/>
+    <div class="nav_item">
+     <%= link_to "Importers", imponeders_path, class:"btn btn-lg btn-success" %>
+      <h5>Some 2k5 Dutch Postal addresses</h5>
+    </div>
+    <br/>    
+    <div class="nav_item">
+     <%= link_to "Musterr", musterrs_path, class:"btn btn-lg btn-danger" %>
+      <h5>Some 1k Switz Postal addresses</h5>
+    </div>
+    <br/>
+        <div class="nav_item">
+     <%= link_to "Konks", konks_path, class:"btn btn-lg btn-danger" %>
+      <h5>Some 700 Switz Postal addresses. Not really too sure</h5>
+    </div>
+    <br/>
+   </div>
+
+   <div class="col-md-3">
+    <p>AMERICAS</p>
+    <div class="nav_item">
+     <%=  link_to "Gadoi", gadois_path, class:"btn btn-lg btn-success" %> 
+      <h5>Some 97k plus American postal addresses</h5>
+    </div>
+     <br/>
+    <div class="nav_item">
+     <%=  link_to "Mweb", mwbes_path, class:"btn btn-lg btn-success" %> 
+     <h5>Some 3k plus postal addresses</h5>
+    </div>
+    <br/>
+    <div class="nav_item">
+     <%=  link_to "Tuna Permit", tuna_permits_path, class:"btn btn-lg btn-info" %>
+     <h5>Some 5k plus postal addresses</h5>
+    </div>
+    <br/>
+   </div>
+
+   <div class="col-md-3">
+    <p>WORLD</p>
+    <div class="nav_item">
+     <%=  link_to "Address", pract_sous_path, class:"btn btn-lg btn-success" %>
+     <h5>Some 350 worldwide postal addresses</h5>
+    </div>
+    <br/>
+   </div>
+ 
+    <div class="col-md-1">
+      <p>Working for you</p>
+    </div>
+</div>

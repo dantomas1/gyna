@@ -1,0 +1,19 @@
+<%= will_paginate @gadois %>
+
+<% @gadois.each do |gadoi| %>
+<div class="row">
+ <div class = "col-md-4 col-md-offset-4 center">
+  <h5>Contact: <%= gadoi.contact %></h5>
+  <h5><%= gadoi.address %></h5>
+  <h5><%= gadoi.cityz %></h5>
+  <h5><%= gadoi.state %>, USA</h5>
+  <h5>Email: <%= gadoi.email %></h5>
+  <h5>Position: <%= gadoi.position %></h5>
+ <hr />
+ <br/>
+ <br/>
+ </div>
+</div>
+<% end %>
+
+<%= will_paginate @gadois %>

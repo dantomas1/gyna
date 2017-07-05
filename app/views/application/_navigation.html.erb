@@ -1,0 +1,14 @@
+<!-- Partial view for global site navigation -->
+<nav class="navbar navbar-default">
+   <div class="container-fluid">
+     <div class="navbar-header">        
+      <%= link_to "Home", root_path, :class => "navbar-brand" %>
+    </div>
+    <div class="nav nav-pills pull-right">  
+      <% if user_signed_in? %>
+        <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+      <% end %>
+        <%= image_tag '0697672.png'%>
+     </div>
+    </div>
+</nav>

@@ -1,0 +1,19 @@
+<% @mwbes.each do |mwbe| %>
+<div class="row">
+ <div class = "col-md-4 col-md-offset-4 center">
+  <h5><%= mwbe.company %></h5>
+  <h5>Contact: <%= mwbe.contact %></h5>
+  <h5><%= mwbe.address %></h5>
+  <h5><%= mwbe.cityz %></h5>
+  <h5><%= mwbe.state %>, USA</h5>
+  <h5>Phone: <%= mwbe.phone %></h5>
+  <h5>Fax: <%= mwbe.fax %></h5>
+  <h5>Email: <%= mwbe.email %></h5>
+  <h5>Position: <%= mwbe.position %></h5>
+ <hr />
+ <br/>
+ <br/>
+ </div>
+</div>
+<% end %>
+

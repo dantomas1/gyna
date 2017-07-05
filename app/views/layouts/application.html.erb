@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scarpy</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= render 'navigation' %>
+
+   <div class="container">
+
+   <% if notice.present? %>
+     <aside class="alert alert-info">
+     <%= notice %>
+     </aside>
+   <% end %>
+   <% if alert.present? %>
+     <aside class="alert alert-danger">
+     <%= alert %>
+    </aside>
+   <% end %>
+
+    <%= yield %>
+ 
+     <!-- render footer partial -->
+   <br/><br/>
+     <%= render 'footer' %>
+   </div>
+  </body>
+</html>
