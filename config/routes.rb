@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   resources :gadois, only: [:index]
   resources :mwbes, only: [:index]
   resources :tuna_permits, only: [:index] 
+  resources :mtech_suppliers, only: [:index]
 end

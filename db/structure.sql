@@ -149,6 +149,44 @@ ALTER SEQUENCE konks_id_seq OWNED BY konks.id;
 
 
 --
+-- Name: mtech_suppliers; Type: TABLE; Schema: public; Owner: -; Tablespace: 
+--
+
+CREATE TABLE mtech_suppliers (
+    id integer NOT NULL,
+    company character varying,
+    contact character varying,
+    email character varying,
+    phone character varying,
+    fax character varying,
+    street character varying,
+    town character varying,
+    province character varying,
+    country character varying,
+    postcode character varying
+);
+
+
+--
+-- Name: mtech_suppliers_id_seq; Type: SEQUENCE; Schema: public; Owner: -
+--
+
+CREATE SEQUENCE mtech_suppliers_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: mtech_suppliers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: -
+--
+
+ALTER SEQUENCE mtech_suppliers_id_seq OWNED BY mtech_suppliers.id;
+
+
+--
 -- Name: musterrs; Type: TABLE; Schema: public; Owner: -; Tablespace: 
 --
 
@@ -413,6 +451,13 @@ ALTER TABLE ONLY konks ALTER COLUMN id SET DEFAULT nextval('konks_id_seq'::regcl
 -- Name: id; Type: DEFAULT; Schema: public; Owner: -
 --
 
+ALTER TABLE ONLY mtech_suppliers ALTER COLUMN id SET DEFAULT nextval('mtech_suppliers_id_seq'::regclass);
+
+
+--
+-- Name: id; Type: DEFAULT; Schema: public; Owner: -
+--
+
 ALTER TABLE ONLY musterrs ALTER COLUMN id SET DEFAULT nextval('musterrs_id_seq'::regclass);
 
 
@@ -481,6 +526,14 @@ ALTER TABLE ONLY imponeders
 
 ALTER TABLE ONLY konks
     ADD CONSTRAINT konks_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: mtech_suppliers_pkey; Type: CONSTRAINT; Schema: public; Owner: -; Tablespace: 
+--
+
+ALTER TABLE ONLY mtech_suppliers
+    ADD CONSTRAINT mtech_suppliers_pkey PRIMARY KEY (id);
 
 
 --
@@ -578,6 +631,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20170703161043'),
 ('20170704162506'),
 ('20170704183225'),
-('20170704184311');
+('20170704184311'),
+('20170710025120');
 
 

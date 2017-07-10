@@ -1,0 +1,17 @@
+<% @mtechs.each do |mtech| %>
+<div class="row">
+ <div class = "col-md-4 col-md-offset-4 center">
+  <h5>Contact: <%= mtech.contact %></h5>
+  <h5><%= mtech.address1 %></h5>
+  <h5><%= mtech.cityz %></h5>
+  <h5><%= mtech.country %></h5>
+  <h5>Phone: <%= mtech.phone %></h5>
+  <h5>Fax: <%= mtech.fax %></h5>
+  <h5>Email: <%= mtech.email %></h5>
+ <hr />
+ <br/>
+ <br/>
+ </div>
+</div>
+<% end %>
+

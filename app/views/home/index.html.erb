@@ -1,11 +1,12 @@
 <p>Welcome <%= current_user.email %> </p>
 
 <div class="row">
- <div class="col-md-2">
-   <p>Working for you</p>
+ <div class="col-md-3">
+   <%= image_tag 'adsmith-5.jpg', class: 'kmain' %>
  </div>
-
-   <div class="col-md-3">
+   <div class="col-md-9">
+    <div class="row">
+   <div class="col-md-4">
     <p>EUROPE</p>
     <div class="nav_item">
      <%=  link_to "Pros Eu", prospects_path, class:"btn btn-lg btn-success" %> 
@@ -29,7 +30,7 @@
     <br/>
    </div>
 
-   <div class="col-md-3">
+   <div class="col-md-4">
     <p>AMERICAS</p>
     <div class="nav_item">
      <%=  link_to "Gadoi", gadois_path, class:"btn btn-lg btn-success" %> 
@@ -48,16 +49,20 @@
     <br/>
    </div>
 
-   <div class="col-md-3">
+   <div class="col-md-4">
     <p>WORLD</p>
     <div class="nav_item">
      <%=  link_to "Address", pract_sous_path, class:"btn btn-lg btn-success" %>
      <h5>Some 350 worldwide postal addresses</h5>
     </div>
     <br/>
-   </div>
+    <div class="nav_item">
+     <%=  link_to "MTech", mtech_suppliers_path, class:"btn btn-lg btn-danger" %>
+     <h5>Some 400 Manure Managemnt Technology Supplier Contact worldwide</h5>
+    </div>
+    <br/> 
+  </div>
  
-    <div class="col-md-1">
-      <p>Working for you</p>
+    </div>
     </div>
 </div>
